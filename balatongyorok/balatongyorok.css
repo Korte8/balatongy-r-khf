@@ -1,0 +1,63 @@
+body{
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.keret{
+    width: 1000px;
+    margin: 0 auto 0 auto;
+}
+.header{
+    max-width: 1000px;
+    min-width: 650px;
+    background-image: url(panorama.jpg);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+    height: 200px;
+    padding: 20px;
+}
+.cimerkep img{
+    width: 150px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.bal{
+    width: 450px;
+    float: left;
+    background-color: #5B9CEA;
+    padding: 20px;
+}
+
+.jobb{
+    width: 450px;
+    float: right;
+     background-color: #5B9CEA;
+     padding: 20px;
+}
+.felkover{
+        font-weight: bold;
+}
+.bekezdes{
+   font-weight: bold;
+}
+.tablazat{
+    text-align: center;
+    background-color: #B0D1F1;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.tablazat td{
+    border: 1px solid black;
+    padding: 5px;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    background-color: red;
+}
