@@ -1,0 +1,325 @@
+﻿<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>El Royale</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!--  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  -->
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="./images/logo.png" />
+
+                </a>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Fő menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--    <a href="#"></a> -->
+                        <a href="#foglalasok" class="nav-link">Foglalás</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#felfedezes" class="nav-link">Felfedezés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#offer" class="nav-link">Ájánlatok</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#galeria" class="nav-link">Galéria</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="oldjukmeg">
+            <div class="hero">
+                <div class="container"></div>
+                <div class="fofejlec">
+                    <h1 class="title"> Felfedezés</h1>
+                    <h2 class="subtitle"> Hotel El Royale</h2>
+                    <a href="#" class="btn btn-gradient">Felfedezés most</a>
+                    <span class="dots"><i class="fas fa-ellipsos-h"></i></span>
+                </div>
+                <!--  <a href="#" class="btn btn-gradient">Felfedezés most</a>-->
+                <!--   /* <span class="dots"><i class="fas fa-ellipsos-h"></i></span>-->
+            </div>
+        </div>
+
+        <section class="foglalas">
+            <a name="foglalasok"></a>
+            <div class="container">
+                <form action="" class="form">
+                    <div class="input-group">
+                        <label for="destination" class="input-label">1felnőtt/ éjszaka-4000ft</label> <br>
+                        <label for="destination" class="input-label">1gyermek/ éjszaka-2000ft</label> <br>
+                        <label for="destination" class="input-label">El Royale/ 1szoba / éjszaka-10.000ft</label> <br>
+                        <label for="destination" class="input-label">Fourseasons/ 1szoba / éjszaka-1000ft</label>
+                    </div>
+                    <div class="input-group">
+                        <label for="adults" class="input-label">Uticél</label>
+                        <select class="options" id="adults">
+                                                  <option value="0">El Royale</option>
+                                                  <option value="1">Fourseasons</option>
+                                                  
+                                              </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="check-in" class="input-label">Érkezés</label>
+                        <input type="date" class="input" id="check-in">
+                    </div>
+                    <div class="input-group">
+                        <label for="check-out" class="input-label">Távozás</label>
+                        <input type="date" class="input" id="check-out">
+                    </div>
+                    <div class="input-group">
+                        <label for="adults" class="input-label">Felnőttek</label>
+                        <select class="options" id="adults">
+                                                  <option value="0">0</option>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                  <option value="5">5</option>
+                                                  <option value="6">6</option>
+                                              </select>
+
+                    </div>
+                    <div class="input-group">
+                        <label for="children" class="input-label">Gyerekek</label>
+                        <select class="options" id="children">
+                                                  <option value="0">0</option>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                  <option value="5">5</option>
+                                                  <option value="6">6</option>
+                                              </select>
+
+                    </div>
+                    <button type="submit" class="btn from-btn btn-purple">Keresés
+                                              <span class="dots" > <i class="fas fa-ellipsos-h"></i></span>
+                                          </button>
+                    <label id="vegosszeg"></label>
+                </form>
+            </div>
+        </section>
+        <section class="hotels">
+            <div class="container">
+                <h5 class="section-head">
+                    <a name="felfedezes"></a>
+                    <span class="heading"> Felfedezés</span>
+                    <span class="sub-heading"> Hoteleink</span>
+                </h5>
+                <div class="grid">
+                    <div class="grid-item featured-hotels">
+                        <img src="./images/motelkep.jpg" class="hotel-image">
+                        <h5 class="hotel-name">El Royale</h5>
+                        <span class="hotel-price"> 10.000ft/éjszaka</span>
+                        <div class="hotel-rating">
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                        </div>
+                        <a href="#" class="btn btn-gradient">
+                             Foglald be most
+                             <span class="dots"> <i class="fas fa-ellipsis-h"></i></span>
+                         </a>
+                    </div>
+
+                    <div class="grid-item featured-hotels">
+                        <img src="./images/fourseasons.jpg" class="hotel-image">
+                        <h5 class="hotel-name">Random Hotel ahol megkéselnek</h5>
+                        <span class="hotel-price"> 1000ft/éjszaka</span>
+                        <div class="hotel-rating">
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+
+                            <i class="fas fa-star-half rating"></i>
+                        </div>
+                        <a href="#" class="btn btn-gradient">
+                             Foglald be most
+                             <span class="dots"> <i class="fas fa-ellipsis-h"></i></span>
+                         </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="offer">
+            <a name="offer"></a>
+            <div class="container">
+                <div class="offer-content">
+                    <div class="discount">
+                        40% kedvezmény
+                    </div>
+                    <h5 class="hotel-name">El Royale</h5>
+                    <div class="hotel-ratings">
+
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <p class="paragraph">
+                        Aenean tincidunt fermentum pharetra. Etiam elementum varius augue nec elementum. Quisque sit amet pulvinar nulla. Donec rutrum lobortis sapien, vel suscipit tellus molestie vitae. Nunc eu velit et sem rhoncus rutrum. Duis at faucibus tortor. Morbi lobortis
+                        massa quis dui semper, vel porta nisi hendrerit. Duis non ex lectus. Vestibulum placerat velit eu arcu vulputate eleifend. Sed quis lobortis sapien. Vivamus tempus mauris fringilla, consectetur lacus mollis, aliquet magna. Ut tincidunt
+                        odio nec ex dictum porta. Suspendisse nec consequat elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent turpis metus, tempus a nisi a, laoreet pharetra nulla. Cras tortor
+                        elit, porttitor sed libero sed, fermentum finibus augue.
+                    </p>
+                    <a href="#" class="btn btn-gradient">
+                            Ajánlat elfogadása
+                            <span class="dots"> <i class="fas fa-ellipsos-h"></i></span>
+                        </a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="galeria">
+            <a name="galeria"></a>
+            <div class="container">
+                <h5 class="section-head">
+                    <span class="heading"> Galéria</span>
+
+                </h5>
+
+                <!--
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 10</div>
+                        <img src="./images/kivulrolnappal.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 10</div>
+                        <img src="./images/szoba.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 10</div>
+                        <img src="./images/kivulrol.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 10</div>
+                        <img src="./images/kozossegi szoba.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 10</div>
+                        <img src="./images/fourseasons.jpg" style="width:100%">
+                    </div>
+
+
+
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+ 
+
+                </div>
+            -->
+                <h2 class="w3-center"></h2>
+
+                <div class="w3-content w3-display-container">
+                    <img class="mySlides" src="./images/kivulrolnappal.png" style="width:80%">
+                    <img class="mySlides" src="./images/szoba.png" style="width:80%;">
+                    <img class="mySlides" src="./images/kozossegi szoba.jpg" style="width:80%">
+
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" id="zarjukkozepre">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)" id="zarjukkozepre2">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="main.js"></script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <!--  <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script> -->
+</body>
+
+</html>
